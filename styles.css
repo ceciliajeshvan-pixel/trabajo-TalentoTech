@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    background-color: #FFB5D4;
+    color: #C90A33;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 3rem 0;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.btn {
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.6rem;
+    border-radius: 1rem;
+}
+header,
+footer {
+    background: #FCF6B3;
+    color: #C90A33;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    padding: 1rem 4rem;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: inherit; 
+    font-size: 2.5rem; 
+    transition: transform 0.2s ease;
+}
+
+.footer-list li a:hover {
+    transform: scale(1.1); 
+}
+
+.div-logo {
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+.logo,
+.header-nav a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: inherit;
+    display: inline-block;
+    padding: 2rem;
+}
+
+.header-nav {
+    margin-right: 2rem;
+}
+
+.header-nav ul,
+footer .footer-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-list li {
+    padding: 1rem;
+}
+
+.footer-list img {
+    width: 5rem;
+    padding: 0.5rem;
+}
+
+/* ----------------------------Colores---------------------------------------------- */
+
+.bg-secondary {
+    background-color: #FCF6B3;
+}
+
+.text-secondary {
+    color: #C90A33;
+}
+
+/* ----------------------------INICIO----------------------------------- */
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inicio h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.parrafo {
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.contenedor-tarjetas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #B3DAFC;
+    flex: 0 0 calc(50% - 1rem); /* No crece, no se encoge, y mide exactamente la mitad menos el gap */
+    width: calc(50% - 1rem);
+    max-width: 35rem;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+/* ------------------------------Contacto---------------------------- */
+
+.contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-contacto {
+    margin: 2rem 0;
+}
+
+.form-contacto {
+    background-color: #B3DAFC;
+    color: #C90A33;
+    width: 100%;
+    max-width: 50rem;
+
+    font-size: 2rem;
+    padding: 3rem;
+    border-radius: 1rem;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+
+    background-color: #fff7fb;
+
+    border: 2px solid #C90A33;
+    border-radius: 0.8rem;
+
+    outline: none;
+}
+
+.grupo-input textarea {
+    min-height: 10rem;
+    resize: vertical;
+}
+
+/* -----------------------------------MEDIA QUERIES ------------------------------ */
+
+
+@media (max-width: 600px) {
+
+    header,
+    footer {
+        flex-direction: column;
+    }
+
+    .header-nav,
+    .div-logo {
+        margin: 0;
+    }
+}
