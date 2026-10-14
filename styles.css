@@ -160,7 +160,7 @@ footer .footer-list {
 }
 .card {
     background-color: #B3DAFC;
-    flex: 0 0 calc(50% - 1rem); /* No crece, no se encoge, y mide exactamente la mitad menos el gap */
+    flex: 0 0 calc(50% - 1rem);
     width: calc(50% - 1rem);
     max-width: 35rem;
     border-radius: 1rem;
